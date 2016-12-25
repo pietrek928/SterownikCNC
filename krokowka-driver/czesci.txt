@@ -1,0 +1,43 @@
+SterownikCNC:    
+
+(Na czarno - do sprawdzenia) (Na czerwono - sprawdzone elementy)
+
+Cz«æci:  (Do czego, link do zakupu, nazwa produktu)
+
+Mosfet x 4 http://www.tme.eu/pl/details/irlz44nspbf/tranzystory-z-kanalem-n-smd/infineon-irf/IRLZ44NSPBF
+
+2. Inverter 2 kana¸owy http://www.tme.eu/pl/details/nc7wz14p6x/bramki-inwertery/fairchild-semiconductor/ NC7WZ14P6X 
+
+3. Mosfet driver http://www.tme.eu/pl/details/ir2104spbf/drivery-uklady-scalone/infineon-irf/ IR2104SPBF
+
+4. Kondensator 1uF/50v 0603 http://www.tme.eu/pl/details/cl10a105kb8nnnc/kondensatory-mlcc-smd-0603/samsung/ CL10A105KB8NNNC 
+
+5. Kondensator 100nF/50v http://www.tme.eu/pl/details/cc0603krx7r9104/kondensatory-mlcc-smd-0603/yageo/cc0603krx7r9bb104a/ CC0603KRX7R9BB104A 
+
+6. Stabilizator 3.3v ldo http://www.tme.eu/pl/details/ld1117s33c/stabilizatory-napiecia-nieregulowane-ldo/st-microelectronics/ LD1117S33C 
+
+7x. Feryt koralik http://www.tme.eu/pl/details/blm18eg471sn1d/ferryty-koraliki/murata/ BLM18EG471SN1D
+
+8. Dioda podwujna(zamiast zenera) http://www.tme.eu/pl/details/bat54s-7-f/diody-schottky-smd/diodes-incorporated/ BAT54S-7-F 
+
+9. 7x Diody zabezpieczajˆce http://www.tme.eu/gb/details/m7/smd-universal-diodes/dc-components/  M7
+
+10. Kondensator elektrolit 100uF/50V http://www.tme.eu/pl/details/pf1j101mnn10c5/kondensatory-elektrolityczne-tht-105c/elite/ PF1J101MNN10C5
+
+11. Bezpiecznik lini 12v http://www.tme.eu/pl/details/bsmd0603-ss2.0/bezpieczniki-smd-0603-superszybkie/eska/fuse-0603-ff-pw-2a0/ FUSE 0603-FF PW 2A0 
+
+12. Transil http://www.tme.eu/pl/details/smbj12a-e3_52/diody-transil-smd-jednokierunkowe/vishay/  SMBJ12A-E3/52 
+
+13. Bezpiecznik lini 24+V http://www.tme.eu/pl/details/0001.1014.pt/bezpieczniki-5x20mm-szybkie/schurter/ SCHURTER 0001.1014.PT 
+
+14. Z¸ˆcza zasilajˆce t-deans http://allegro.pl/t-dean-para-zlacze-pradowe-do-modeli-i6656931754.html
+
+15. Z¸ˆcza sygna¸owe http://www.tme.eu/pl/details/zl263-4sg/listwy-i-gniazda-kolkowe/ninigi/ 
+http://www.tme.eu/pl/details/zl201-04g/listwy-i-gniazda-kolkowe/connfly/ds1021-1_4sf1-1/ CONNFLY DS1021-1*4SF1-1 
+
+16. Rezystory 10ohm http://www.tme.eu/pl/details/ar0603-10r-0.1%25/rezystory-precyzyjne-smd-0603/viking/ar03btcx0100/ VIKING AR03BTCX0100 
+
+
+Do Test—w:
+
+-http://www.tme.eu/pl/details/ds1020-04rt1d/zlacza-ffc-fpc-raster-254mm/connfly/ 
