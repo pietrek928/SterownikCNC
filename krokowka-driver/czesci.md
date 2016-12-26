@@ -1,12 +1,12 @@
 #&#x2699; Sterownik krokówek:
 (&#x261B; - do sprawdzenia)
 #Części:  (Do czego, link do zakupu, nazwa produktu)
-* Mosfet x 4 http://www.tme.eu/pl/details/irlz44nspbf/tranzystory-z-kanalem-n-smd/infineon-irf/IRLZ44NSPBF
-* Inverter 2 kanałowy http://www.tme.eu/pl/details/nc7wz14p6x/bramki-inwertery/fairchild-semiconductor/ NC7WZ14P6X 
-* Mosfet driver http://www.tme.eu/pl/details/ir2104spbf/drivery-uklady-scalone/infineon-irf/ IR2104SPBF
+* 8 x Mosfet http://www.tme.eu/pl/details/irlz44nspbf/tranzystory-z-kanalem-n-smd/infineon-irf/IRLZ44NSPBF
+* 2 x Inverter 2 kanałowy http://www.tme.eu/pl/details/nc7wz14p6x/bramki-inwertery/fairchild-semiconductor/ NC7WZ14P6X 
+* 4 x Mosfet driver http://www.tme.eu/pl/details/ir2104spbf/drivery-uklady-scalone/infineon-irf/ IR2104SPBF
 * Kondensator 1uF/50v 0603 http://www.tme.eu/pl/details/cl10a105kb8nnnc/kondensatory-mlcc-smd-0603/samsung/ CL10A105KB8NNNC 
 * Kondensator 100nF/50v http://www.tme.eu/pl/details/cc0603krx7r9104/kondensatory-mlcc-smd-0603/yageo/cc0603krx7r9bb104a/ CC0603KRX7R9BB104A 
-* Stabilizator 3.3v ldo http://www.tme.eu/pl/details/ld1117s33c/stabilizatory-napiecia-nieregulowane-ldo/st-microelectronics/ LD1117S33C 
+* 1 x Stabilizator 3.3v ldo http://www.tme.eu/pl/details/ts9011scx/stabilizatory-napiecia-nieregulowane-ldo/taiwan-semiconductor/ TS9011SCX
 * &#x261B;Feryt koralik http://www.tme.eu/pl/details/blm18eg471sn1d/ferryty-koraliki/murata/ BLM18EG471SN1D
 * Dioda podwójna http://www.tme.eu/pl/details/bat54s-7-f/diody-schottky-smd/diodes-incorporated/ BAT54S-7-F 
 * &#x261B;7x Diody zabezpieczające http://www.tme.eu/gb/details/m7/smd-universal-diodes/dc-components/  M7
