@@ -20,5 +20,5 @@ http://www.tme.eu/pl/details/zl201-04g/listwy-i-gniazda-kolkowe/connfly/ds1021-1
 * Rezystory 10ohm http://www.tme.eu/pl/details/ar0603-10r-0.1%25/rezystory-precyzyjne-smd-0603/viking/ar03btcx0100/ VIKING AR03BTCX0100 
 
 #Do Testów:
--http://www.tme.eu/pl/details/ds1020-04rt1d/zlacza-ffc-fpc-raster-254mm/connfly/ 
+- http://www.tme.eu/pl/details/ds1020-04rt1d/zlacza-ffc-fpc-raster-254mm/connfly/ 
 
