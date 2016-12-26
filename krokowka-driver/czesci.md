@@ -1,4 +1,4 @@
-#&#x26A1; SterownikCNC:
+#&#263C; SterownikCNC:
 (&#x261B; - do sprawdzenia)
 #Części:  (Do czego, link do zakupu, nazwa produktu)
 * Mosfet x 4 http://www.tme.eu/pl/details/irlz44nspbf/tranzystory-z-kanalem-n-smd/infineon-irf/IRLZ44NSPBF
