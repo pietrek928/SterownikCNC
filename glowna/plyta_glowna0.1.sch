@@ -13137,6 +13137,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
 <rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
 </package>
+<package name="SEPARATOR">
+<smd name="1" x="-0.25" y="0" dx="0.5" dy="0.3" layer="1"/>
+<smd name="2" x="0.25" y="0" dx="0.5" dy="0.3" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TL431AIDBZR">
@@ -13167,6 +13171,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pin name="E" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
+<symbol name="SEPARATOR">
+<pin name="1" x="-2.54" y="0" length="middle" direction="pas"/>
+<pin name="2" x="2.54" y="0" length="middle" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TL431AIDBZR">
@@ -13196,6 +13204,22 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <connect gate="G$1" pin="B" pad="1"/>
 <connect gate="G$1" pin="C" pad="2 4"/>
 <connect gate="G$1" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SEPARATOR">
+<gates>
+<gate name="G$1" symbol="SEPARATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SEPARATOR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -19476,6 +19500,9 @@ Based on the following sources:
 <part name="P+4" library="supply1" deviceset="+24V" device=""/>
 <part name="P+5" library="supply1" deviceset="+24V" device=""/>
 <part name="P+6" library="supply1" deviceset="+24V" device=""/>
+<part name="U$20" library="robione" deviceset="SEPARATOR" device=""/>
+<part name="U$21" library="robione" deviceset="SEPARATOR" device=""/>
+<part name="U$22" library="robione" deviceset="SEPARATOR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20430,6 +20457,9 @@ napiecia</text>
 <instance part="P+6" gate="1" x="220.98" y="73.66" smashed="yes">
 <attribute name="VALUE" x="220.98" y="76.2" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="U$20" gate="G$1" x="226.06" y="119.38"/>
+<instance part="U$21" gate="G$1" x="223.52" y="93.98"/>
+<instance part="U$22" gate="G$1" x="223.52" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -22876,24 +22906,23 @@ napiecia</text>
 <pinref part="P+4" gate="1" pin="+24V"/>
 <wire x1="220.98" y1="119.38" x2="223.52" y2="119.38" width="0.1524" layer="91"/>
 <junction x="220.98" y="119.38"/>
+<pinref part="U$20" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R66" gate="G$1" pin="2"/>
 <wire x1="218.44" y1="93.98" x2="220.98" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="96.52" x2="220.98" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+24V"/>
-<wire x1="220.98" y1="93.98" x2="223.52" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U$21" gate="G$1" pin="1"/>
 <junction x="220.98" y="93.98"/>
-<label x="223.52" y="93.98" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R67" gate="G$1" pin="2"/>
 <wire x1="218.44" y1="68.58" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="68.58" x2="220.98" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="1" pin="+24V"/>
-<wire x1="220.98" y1="68.58" x2="223.52" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="U$22" gate="G$1" pin="1"/>
 <junction x="220.98" y="68.58"/>
-<label x="223.52" y="68.58" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TIM5_PWM_Y3" class="0">
@@ -23660,6 +23689,11 @@ napiecia</text>
 <wire x1="-167.64" y1="2.54" x2="-170.18" y2="2.54" width="0.1524" layer="91"/>
 <label x="-170.18" y="2.54" size="1.6764" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$20" gate="G$1" pin="2"/>
+<wire x1="228.6" y1="119.38" x2="231.14" y2="119.38" width="0.1524" layer="91"/>
+<label x="231.14" y="119.38" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="W1_2" class="0">
 <segment>
@@ -23781,6 +23815,11 @@ napiecia</text>
 <wire x1="-175.26" y1="-27.94" x2="-177.8" y2="-27.94" width="0.1524" layer="91"/>
 <label x="-177.8" y="-27.94" size="1.6764" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$21" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="93.98" x2="228.6" y2="93.98" width="0.1524" layer="91"/>
+<label x="228.6" y="93.98" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="W2_2" class="0">
 <segment>
@@ -23841,6 +23880,11 @@ napiecia</text>
 <pinref part="R60" gate="G$1" pin="1"/>
 <wire x1="-99.06" y1="2.54" x2="-101.6" y2="2.54" width="0.1524" layer="91"/>
 <label x="-101.6" y="2.54" size="1.6764" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$22" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="68.58" x2="228.6" y2="68.58" width="0.1524" layer="91"/>
+<label x="228.6" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="W3_2" class="0">
