@@ -19467,8 +19467,8 @@ Based on the following sources:
 <part name="R61" library="rcl" deviceset="R-EU_" device="R0603" value="600"/>
 <part name="R62" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="C46" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
-<part name="R63" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
-<part name="R64" library="rcl" deviceset="R-EU_" device="R0603" value="15k"/>
+<part name="R63" library="rcl" deviceset="R-EU_" device="R0603" value="15k"/>
+<part name="R64" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="GND77" library="supply1" deviceset="GND" device=""/>
 <part name="P+10" library="supply1" deviceset="+24V" device=""/>
 <part name="C47" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
