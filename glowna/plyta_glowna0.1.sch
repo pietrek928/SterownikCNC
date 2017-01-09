@@ -19094,9 +19094,9 @@ Based on the following sources:
 <part name="GND41" library="supply1" deviceset="GND" device=""/>
 <part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND42" library="supply1" deviceset="GND" device=""/>
-<part name="C20" library="rcl" deviceset="CPOL-EU" device="UD-8X10"/>
-<part name="C21" library="rcl" deviceset="CPOL-EU" device="UD-8X10"/>
-<part name="C22" library="rcl" deviceset="CPOL-EU" device="UD-8X10"/>
+<part name="C20" library="rcl" deviceset="CPOL-EU" device="UD-8X10" value="100uF"/>
+<part name="C21" library="rcl" deviceset="CPOL-EU" device="UD-8X10" value="100uF"/>
+<part name="C22" library="rcl" deviceset="CPOL-EU" device="UD-8X10" value="100uF"/>
 <part name="GND43" library="supply1" deviceset="GND" device=""/>
 <part name="GND44" library="supply1" deviceset="GND" device=""/>
 <part name="GND45" library="supply1" deviceset="GND" device=""/>
@@ -19202,6 +19202,8 @@ Based on the following sources:
 <part name="D2" library="diode" deviceset="BAT54S" device=""/>
 <part name="D3" library="diode" deviceset="BAT54S" device=""/>
 <part name="D4" library="diode" deviceset="BAT54S" device=""/>
+<part name="C31" library="rcl" deviceset="CPOL-EU" device="UD-8X10" value="100uF"/>
+<part name="C32" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -19457,8 +19459,8 @@ pozostale 3 sot223</text>
 <instance part="+3V15" gate="G$1" x="-81.28" y="127" smashed="yes">
 <attribute name="VALUE" x="-78.74" y="129.54" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="+3V16" gate="G$1" x="-114.3" y="86.36" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-116.84" y="83.82" size="1.778" layer="96"/>
+<instance part="+3V16" gate="G$1" x="-114.3" y="96.52" smashed="yes">
+<attribute name="VALUE" x="-111.76" y="99.06" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="Q1" gate="P" x="-43.18" y="88.9" rot="R90"/>
 <instance part="C18" gate="G$1" x="-38.1" y="76.2" rot="R180"/>
@@ -19821,6 +19823,11 @@ pozostale 3 sot223</text>
 <instance part="D4" gate="G$1" x="284.48" y="-15.24" smashed="yes" rot="R90">
 <attribute name="VALUE" x="288.4424" y="-19.558" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="C31" gate="G$1" x="-119.38" y="86.36"/>
+<instance part="C32" gate="G$1" x="-109.22" y="83.82" smashed="yes" rot="R180">
+<attribute name="NAME" x="-106.299" y="89.916" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-103.759" y="89.916" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -20010,16 +20017,6 @@ pozostale 3 sot223</text>
 <wire x1="-81.28" y1="124.46" x2="-81.28" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="C"/>
-<pinref part="U$6" gate="G$1" pin="OUT"/>
-<wire x1="-129.54" y1="101.6" x2="-121.92" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-121.92" y1="101.6" x2="-121.92" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="-121.92" y1="91.44" x2="-114.3" y2="91.44" width="0.1524" layer="91"/>
-<junction x="-121.92" y="91.44"/>
-<pinref part="+3V16" gate="G$1" pin="+3V3"/>
-<wire x1="-114.3" y1="91.44" x2="-114.3" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="+3V12" gate="G$1" pin="+3V3"/>
 <wire x1="-43.18" y1="2.54" x2="-43.18" y2="0" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="1"/>
@@ -20173,6 +20170,24 @@ pozostale 3 sot223</text>
 <pinref part="+3V33" gate="G$1" pin="+3V3"/>
 <wire x1="325.12" y1="-25.4" x2="317.5" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="-25.4" x2="317.5" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="C"/>
+<pinref part="U$6" gate="G$1" pin="OUT"/>
+<wire x1="-129.54" y1="101.6" x2="-121.92" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="101.6" x2="-121.92" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="91.44" x2="-119.38" y2="91.44" width="0.1524" layer="91"/>
+<junction x="-121.92" y="91.44"/>
+<pinref part="C31" gate="G$1" pin="+"/>
+<wire x1="-119.38" y1="88.9" x2="-119.38" y2="91.44" width="0.1524" layer="91"/>
+<junction x="-119.38" y="91.44"/>
+<pinref part="C32" gate="G$1" pin="2"/>
+<wire x1="-119.38" y1="91.44" x2="-114.3" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="91.44" x2="-109.22" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="91.44" x2="-109.22" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="+3V16" gate="G$1" pin="+3V3"/>
+<wire x1="-114.3" y1="93.98" x2="-114.3" y2="91.44" width="0.1524" layer="91"/>
+<junction x="-114.3" y="91.44"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -20328,6 +20343,12 @@ pozostale 3 sot223</text>
 <pinref part="U$6" gate="G$1" pin="GND"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="-129.54" y1="83.82" x2="-129.54" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="C31" gate="G$1" pin="-"/>
+<wire x1="-129.54" y1="81.28" x2="-119.38" y2="81.28" width="0.1524" layer="91"/>
+<junction x="-129.54" y="81.28"/>
+<pinref part="C32" gate="G$1" pin="1"/>
+<wire x1="-109.22" y1="81.28" x2="-119.38" y2="81.28" width="0.1524" layer="91"/>
+<junction x="-119.38" y="81.28"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
