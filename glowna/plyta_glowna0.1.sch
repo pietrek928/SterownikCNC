@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19506,6 +19506,9 @@ Based on the following sources:
 <part name="U$23" library="robione" deviceset="SEPARATOR" device=""/>
 <part name="U$24" library="robione" deviceset="SEPARATOR" device=""/>
 <part name="U$25" library="robione" deviceset="SEPARATOR" device=""/>
+<part name="D27" library="diode" deviceset="BAT54S" device=""/>
+<part name="R68" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="+3V46" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20466,6 +20469,16 @@ napiecia</text>
 <instance part="U$23" gate="G$1" x="213.36" y="116.84"/>
 <instance part="U$24" gate="G$1" x="213.36" y="91.44"/>
 <instance part="U$25" gate="G$1" x="213.36" y="66.04"/>
+<instance part="D27" gate="G$1" x="474.98" y="99.06" smashed="yes">
+<attribute name="VALUE" x="470.662" y="95.0976" size="1.778" layer="96"/>
+</instance>
+<instance part="R68" gate="G$1" x="467.36" y="109.22" smashed="yes">
+<attribute name="NAME" x="465.8614" y="102.87" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="468.122" y="102.87" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="+3V46" gate="G$1" x="482.6" y="104.14" smashed="yes">
+<attribute name="VALUE" x="485.14" y="106.68" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -20937,6 +20950,12 @@ napiecia</text>
 <pinref part="+3V45" gate="G$1" pin="+3V3"/>
 <pinref part="R52" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="D27" gate="G$1" pin="C2"/>
+<wire x1="480.06" y1="99.06" x2="482.6" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="482.6" y1="99.06" x2="482.6" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="+3V46" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -21199,10 +21218,10 @@ napiecia</text>
 <pinref part="GND31" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="JP7" gate="A" pin="2"/>
-<wire x1="474.98" y1="109.22" x2="457.2" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="462.28" y1="109.22" x2="457.2" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="457.2" y1="109.22" x2="457.2" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="GND32" gate="1" pin="GND"/>
+<pinref part="R68" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="Q2" gate="G$1" pin="S"/>
@@ -22143,7 +22162,11 @@ napiecia</text>
 <segment>
 <pinref part="JP7" gate="A" pin="1"/>
 <wire x1="474.98" y1="106.68" x2="469.9" y2="106.68" width="0.1524" layer="91"/>
-<label x="469.9" y="106.68" size="1.4224" layer="95" rot="MR0" xref="yes"/>
+<label x="452.12" y="106.68" size="1.4224" layer="95" rot="MR0" xref="yes"/>
+<pinref part="D27" gate="G$1" pin="A1"/>
+<wire x1="469.9" y1="106.68" x2="452.12" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="469.9" y1="99.06" x2="469.9" y2="106.68" width="0.1524" layer="91"/>
+<junction x="469.9" y="106.68"/>
 </segment>
 </net>
 <net name="TIM5_EX1_1" class="0">
@@ -23940,6 +23963,16 @@ napiecia</text>
 <pinref part="R67" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="66.04" x2="218.44" y2="66.04" width="0.1524" layer="91"/>
 <junction x="215.9" y="66.04"/>
+</segment>
+</net>
+<net name="N$84" class="0">
+<segment>
+<pinref part="JP7" gate="A" pin="2"/>
+<wire x1="474.98" y1="109.22" x2="472.44" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R68" gate="G$1" pin="2"/>
+<pinref part="D27" gate="G$1" pin="C1A2"/>
+<wire x1="474.98" y1="101.6" x2="474.98" y2="109.22" width="0.1524" layer="91"/>
+<junction x="474.98" y="109.22"/>
 </segment>
 </net>
 </nets>
