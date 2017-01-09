@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19550,6 +19550,7 @@ mniej chujowego niż to</text>
 <wire x1="152.4" y1="-5.08" x2="231.14" y2="-5.08" width="0.1524" layer="97" style="longdash"/>
 <text x="-43.18" y="91.44" size="5.08" layer="99">Jaki
 kwarc?</text>
+<text x="-139.7" y="71.12" size="1.27" layer="99">może jakiś elektrolit ?</text>
 <text x="157.48" y="-17.78" size="6.4516" layer="97">USB</text>
 <wire x1="434.34" y1="91.44" x2="500.38" y2="91.44" width="0.1524" layer="97" style="longdash"/>
 <text x="287.02" y="58.42" size="3.81" layer="99">&lt;--PWM na sofcie?
@@ -19576,6 +19577,8 @@ pozostale 3 sot223</text>
 <wire x1="-198.12" y1="20.32" x2="-104.14" y2="20.32" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-104.14" y1="20.32" x2="-48.26" y2="20.32" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-104.14" y1="60.96" x2="-104.14" y2="20.32" width="0.1524" layer="97" style="shortdash"/>
+<text x="-101.6" y="53.34" size="2.54" layer="97">Pomiar
+napiecia</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="58.42" y="38.1"/>
@@ -20284,28 +20287,28 @@ pozostale 3 sot223</text>
 </instance>
 <instance part="GND73" gate="1" x="-124.46" y="25.4"/>
 <instance part="R43" gate="G$1" x="-149.86" y="50.8" smashed="yes">
-<attribute name="NAME" x="-151.3586" y="44.45" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-149.098" y="44.45" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="-153.67" y="51.8414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-143.51" y="51.562" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R44" gate="G$1" x="-149.86" y="48.26" smashed="yes">
-<attribute name="NAME" x="-151.3586" y="41.91" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-149.098" y="41.91" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="-153.67" y="49.3014" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-143.51" y="49.022" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R45" gate="G$1" x="-149.86" y="45.72" smashed="yes">
-<attribute name="NAME" x="-151.3586" y="39.37" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-149.098" y="39.37" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="-153.67" y="46.7614" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-143.51" y="46.482" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R46" gate="G$1" x="-149.86" y="43.18" smashed="yes">
-<attribute name="NAME" x="-151.3586" y="36.83" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-149.098" y="36.83" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="-153.67" y="44.2214" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-143.51" y="43.942" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R47" gate="G$1" x="-149.86" y="40.64" smashed="yes">
-<attribute name="NAME" x="-151.3586" y="34.29" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-149.098" y="34.29" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="-153.67" y="41.6814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-143.51" y="41.402" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R48" gate="G$1" x="-149.86" y="38.1" smashed="yes">
-<attribute name="NAME" x="-151.3586" y="31.75" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-149.098" y="31.75" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="-153.67" y="39.1414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-143.51" y="38.862" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND74" gate="1" x="-185.42" y="25.4"/>
 <instance part="IC4" gate="A" x="-144.78" y="0"/>
@@ -20404,21 +20407,21 @@ pozostale 3 sot223</text>
 <attribute name="NAME" x="-59.944" y="-13.081" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-67.564" y="-15.621" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R63" gate="G$1" x="-68.58" y="48.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="-62.23" y="46.7614" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-62.23" y="49.022" size="1.778" layer="96" rot="R180"/>
+<instance part="R63" gate="G$1" x="-83.82" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="-77.47" y="49.3014" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-77.47" y="51.562" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R64" gate="G$1" x="-68.58" y="33.02" smashed="yes" rot="R90">
-<attribute name="NAME" x="-62.23" y="31.5214" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-62.23" y="33.782" size="1.778" layer="96" rot="R180"/>
+<instance part="R64" gate="G$1" x="-83.82" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="-77.47" y="34.0614" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-77.47" y="36.322" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND77" gate="1" x="-68.58" y="20.32"/>
-<instance part="P+10" gate="1" x="-68.58" y="58.42" smashed="yes">
-<attribute name="VALUE" x="-60.96" y="60.96" size="1.778" layer="96" rot="R180"/>
+<instance part="GND77" gate="1" x="-83.82" y="22.86"/>
+<instance part="P+10" gate="1" x="-83.82" y="60.96" smashed="yes">
+<attribute name="VALUE" x="-76.2" y="63.5" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C47" gate="G$1" x="-73.66" y="33.02" smashed="yes" rot="R180">
-<attribute name="NAME" x="-75.184" y="32.639" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-72.644" y="37.719" size="1.778" layer="96" rot="R180"/>
+<instance part="C47" gate="G$1" x="-88.9" y="35.56" smashed="yes" rot="R180">
+<attribute name="NAME" x="-90.424" y="35.179" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-87.884" y="40.259" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="JP23" gate="G$1" x="231.14" y="12.7"/>
 </instances>
@@ -21566,16 +21569,6 @@ pozostale 3 sot223</text>
 <wire x1="-147.32" y1="-7.62" x2="-147.32" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R64" gate="G$1" pin="1"/>
-<wire x1="-68.58" y1="27.94" x2="-68.58" y2="25.4" width="0.1524" layer="91" style="longdash"/>
-<pinref part="GND77" gate="1" pin="GND"/>
-<pinref part="C47" gate="G$1" pin="1"/>
-<wire x1="-68.58" y1="25.4" x2="-68.58" y2="22.86" width="0.1524" layer="91" style="longdash"/>
-<wire x1="-68.58" y1="25.4" x2="-73.66" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="25.4" x2="-73.66" y2="30.48" width="0.1524" layer="91"/>
-<junction x="-68.58" y="25.4"/>
-</segment>
-<segment>
 <pinref part="GND76" gate="1" pin="GND"/>
 <pinref part="R53" gate="G$1" pin="1"/>
 <wire x1="-91.44" y1="-45.72" x2="-91.44" y2="-43.18" width="0.1524" layer="91"/>
@@ -21584,6 +21577,16 @@ pozostale 3 sot223</text>
 <wire x1="-91.44" y1="-43.18" x2="-99.06" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="-43.18" x2="-99.06" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="-91.44" y="-43.18"/>
+</segment>
+<segment>
+<pinref part="R64" gate="G$1" pin="1"/>
+<wire x1="-83.82" y1="30.48" x2="-83.82" y2="27.94" width="0.1524" layer="91" style="longdash"/>
+<pinref part="C47" gate="G$1" pin="1"/>
+<wire x1="-83.82" y1="27.94" x2="-88.9" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="27.94" x2="-88.9" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="GND77" gate="1" pin="GND"/>
+<wire x1="-83.82" y1="25.4" x2="-83.82" y2="27.94" width="0.1524" layer="91"/>
+<junction x="-83.82" y="27.94"/>
 </segment>
 </net>
 <net name="I2C1_SDA" class="0">
@@ -22453,14 +22456,14 @@ pozostale 3 sot223</text>
 <segment>
 <pinref part="R63" gate="G$1" pin="1"/>
 <pinref part="R64" gate="G$1" pin="2"/>
-<wire x1="-68.58" y1="43.18" x2="-68.58" y2="40.64" width="0.1524" layer="91" style="longdash"/>
-<wire x1="-68.58" y1="40.64" x2="-68.58" y2="38.1" width="0.1524" layer="91" style="longdash"/>
-<wire x1="-68.58" y1="40.64" x2="-60.96" y2="40.64" width="0.1524" layer="91"/>
-<junction x="-68.58" y="40.64"/>
-<label x="-60.96" y="40.64" size="1.6764" layer="95" xref="yes"/>
+<wire x1="-83.82" y1="45.72" x2="-83.82" y2="43.18" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-83.82" y1="43.18" x2="-83.82" y2="40.64" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-83.82" y1="43.18" x2="-76.2" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-83.82" y="43.18"/>
+<label x="-76.2" y="43.18" size="1.6764" layer="95" xref="yes"/>
 <pinref part="C47" gate="G$1" pin="2"/>
-<wire x1="-68.58" y1="40.64" x2="-73.66" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="40.64" x2="-73.66" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="43.18" x2="-88.9" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="43.18" x2="-88.9" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC_PRAD_Y" class="0">
@@ -22887,8 +22890,8 @@ pozostale 3 sot223</text>
 </segment>
 <segment>
 <pinref part="R63" gate="G$1" pin="2"/>
-<wire x1="-68.58" y1="53.34" x2="-68.58" y2="55.88" width="0.1524" layer="91" style="longdash"/>
 <pinref part="P+10" gate="1" pin="+24V"/>
+<wire x1="-83.82" y1="58.42" x2="-83.82" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TIM5_PWM_Y3" class="0">
