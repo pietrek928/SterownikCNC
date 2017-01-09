@@ -19467,6 +19467,7 @@ Based on the following sources:
 <part name="R61" library="rcl" deviceset="R-EU_" device="R0603" value="600"/>
 <part name="R62" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="C46" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
+<part name="GRZALKA4" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20400,6 +20401,7 @@ pozostale 3 sot223</text>
 <attribute name="NAME" x="-122.301" y="-11.176" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-117.221" y="-13.716" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="GRZALKA4" gate="G$1" x="231.14" y="15.24" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -22052,6 +22054,20 @@ pozostale 3 sot223</text>
 <wire x1="40.64" y1="-15.24" x2="40.64" y2="-17.78" width="0.1524" layer="91"/>
 <label x="40.64" y="-17.78" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="C46" gate="G$1" pin="2"/>
+<wire x1="-116.84" y1="-12.7" x2="-114.3" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="-12.7" x2="-114.3" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="R62" gate="G$1" pin="1"/>
+<wire x1="-114.3" y1="-7.62" x2="-116.84" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="0" x2="-114.3" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="-114.3" y="-7.62"/>
+<pinref part="IC4" gate="C" pin="OUT"/>
+<wire x1="-119.38" y1="0" x2="-114.3" y2="0" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="0" x2="-111.76" y2="0" width="0.1524" layer="91"/>
+<junction x="-114.3" y="0"/>
+<label x="-111.76" y="0" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PWM_SOFT_LASER" class="0">
 <segment>
@@ -22412,12 +22428,40 @@ pozostale 3 sot223</text>
 <wire x1="2.54" y1="25.4" x2="0" y2="25.4" width="0.1524" layer="91"/>
 <label x="0" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="C44" gate="G$1" pin="2"/>
+<wire x1="-162.56" y1="-45.72" x2="-160.02" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="-45.72" x2="-160.02" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="R56" gate="G$1" pin="1"/>
+<wire x1="-160.02" y1="-40.64" x2="-162.56" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="B" pin="OUT"/>
+<wire x1="-165.1" y1="-33.02" x2="-160.02" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="-33.02" x2="-160.02" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="-160.02" y="-40.64"/>
+<wire x1="-160.02" y1="-33.02" x2="-157.48" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="-160.02" y="-33.02"/>
+<label x="-157.48" y="-33.02" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="ADC_PRAD_X" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PC1"/>
 <wire x1="2.54" y1="22.86" x2="0" y2="22.86" width="0.1524" layer="91"/>
 <label x="0" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="A" pin="OUT"/>
+<wire x1="-165.1" y1="0" x2="-160.02" y2="0" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="0" x2="-160.02" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="R55" gate="G$1" pin="1"/>
+<wire x1="-160.02" y1="-7.62" x2="-162.56" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="C41" gate="G$1" pin="2"/>
+<wire x1="-162.56" y1="-12.7" x2="-160.02" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="-12.7" x2="-160.02" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="-160.02" y="-7.62"/>
+<wire x1="-160.02" y1="0" x2="-157.48" y2="0" width="0.1524" layer="91"/>
+<junction x="-160.02" y="0"/>
+<label x="-157.48" y="0" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LCD_SPI2_MISO" class="0">
@@ -23546,21 +23590,6 @@ pozostale 3 sot223</text>
 <label x="-185.42" y="40.64" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$66" class="0">
-<segment>
-<pinref part="IC4" gate="A" pin="OUT"/>
-<wire x1="-165.1" y1="0" x2="-160.02" y2="0" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="0" x2="-160.02" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="R55" gate="G$1" pin="1"/>
-<wire x1="-160.02" y1="-7.62" x2="-162.56" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="C41" gate="G$1" pin="2"/>
-<wire x1="-162.56" y1="-12.7" x2="-160.02" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="-12.7" x2="-160.02" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="-160.02" y="-7.62"/>
-<wire x1="-160.02" y1="0" x2="-157.48" y2="0" width="0.1524" layer="91"/>
-<junction x="-160.02" y="0"/>
-</segment>
-</net>
 <net name="N$73" class="0">
 <segment>
 <pinref part="R49" gate="G$1" pin="2"/>
@@ -23678,21 +23707,6 @@ pozostale 3 sot223</text>
 <junction x="-185.42" y="-30.48"/>
 </segment>
 </net>
-<net name="N$82" class="0">
-<segment>
-<pinref part="C44" gate="G$1" pin="2"/>
-<wire x1="-162.56" y1="-45.72" x2="-160.02" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="-45.72" x2="-160.02" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="R56" gate="G$1" pin="1"/>
-<wire x1="-160.02" y1="-40.64" x2="-162.56" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="IC4" gate="B" pin="OUT"/>
-<wire x1="-165.1" y1="-33.02" x2="-160.02" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="-33.02" x2="-160.02" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="-160.02" y="-40.64"/>
-<wire x1="-160.02" y1="-33.02" x2="-157.48" y2="-33.02" width="0.1524" layer="91"/>
-<junction x="-160.02" y="-33.02"/>
-</segment>
-</net>
 <net name="N$83" class="0">
 <segment>
 <pinref part="R57" gate="G$1" pin="1"/>
@@ -23749,19 +23763,19 @@ pozostale 3 sot223</text>
 <wire x1="-149.86" y1="-2.54" x2="-152.4" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$88" class="0">
+<net name="N$66" class="0">
 <segment>
-<pinref part="C46" gate="G$1" pin="2"/>
-<wire x1="-116.84" y1="-12.7" x2="-114.3" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="-12.7" x2="-114.3" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="R62" gate="G$1" pin="1"/>
-<wire x1="-114.3" y1="-7.62" x2="-116.84" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="0" x2="-114.3" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="-114.3" y="-7.62"/>
-<pinref part="IC4" gate="C" pin="OUT"/>
-<wire x1="-119.38" y1="0" x2="-114.3" y2="0" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="0" x2="-111.76" y2="0" width="0.1524" layer="91"/>
-<junction x="-114.3" y="0"/>
+<pinref part="IC2" gate="G$1" pin="B"/>
+<pinref part="GRZALKA4" gate="G$1" pin="2"/>
+<wire x1="223.52" y1="15.24" x2="228.6" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$82" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="A"/>
+<pinref part="GRZALKA4" gate="G$1" pin="1"/>
+<wire x1="223.52" y1="10.16" x2="228.6" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="10.16" x2="228.6" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
