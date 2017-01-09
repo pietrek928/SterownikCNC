@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19550,7 +19550,6 @@ mniej chujowego niż to</text>
 <wire x1="152.4" y1="-5.08" x2="231.14" y2="-5.08" width="0.1524" layer="97" style="longdash"/>
 <text x="-43.18" y="91.44" size="5.08" layer="99">Jaki
 kwarc?</text>
-<text x="-139.7" y="71.12" size="1.27" layer="99">może jakiś elektrolit ?</text>
 <text x="157.48" y="-17.78" size="6.4516" layer="97">USB</text>
 <wire x1="434.34" y1="91.44" x2="500.38" y2="91.44" width="0.1524" layer="97" style="longdash"/>
 <text x="287.02" y="58.42" size="3.81" layer="99">&lt;--PWM na sofcie?
