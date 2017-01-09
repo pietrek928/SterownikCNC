@@ -19569,11 +19569,6 @@ pozostale 3 sot223</text>
 <wire x1="500.38" y1="-2.54" x2="589.28" y2="-2.54" width="0.1524" layer="97" style="longdash"/>
 <text x="508" y="33.02" size="5.08" layer="97">I2C1</text>
 <text x="502.92" y="-10.16" size="5.08" layer="97">Wifi</text>
-<text x="22.86" y="38.1" size="3.81" layer="99">Nie podlaczone
-1. ADC_PRAD_X
-2. ADC_PRAD_Y
-3. ADC_PRAD_Z
-4. ADC3_POMIAR_NAPIECIA</text>
 <wire x1="304.8" y1="17.78" x2="363.22" y2="17.78" width="0.1524" layer="97" style="longdash"/>
 <wire x1="363.22" y1="17.78" x2="363.22" y2="-48.26" width="0.1524" layer="97" style="longdash"/>
 <text x="307.34" y="12.7" size="3.81" layer="97">Lvl shifter</text>
