@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19202,8 +19202,9 @@ Based on the following sources:
 <part name="D2" library="diode" deviceset="BAT54S" device=""/>
 <part name="D3" library="diode" deviceset="BAT54S" device=""/>
 <part name="D4" library="diode" deviceset="BAT54S" device=""/>
-<part name="C31" library="rcl" deviceset="CPOL-EU" device="UD-8X10" value="100uF"/>
+<part name="C31" library="rcl" deviceset="CPOL-EU" device="UD-8X10" value="10\uF"/>
 <part name="C32" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C33" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -19224,7 +19225,6 @@ Based on the following sources:
 <wire x1="-48.26" y1="101.6" x2="-20.32" y2="101.6" width="0.1524" layer="97" style="longdash"/>
 <text x="-45.72" y="71.12" size="1.27" layer="99">Wyliczymy jak 
 już będzie dobrany kwarc</text>
-<text x="88.9" y="121.92" size="2.54" layer="99">Co robimy z rs485?</text>
 <wire x1="-48.26" y1="134.62" x2="-104.14" y2="134.62" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-104.14" y1="134.62" x2="-104.14" y2="60.96" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-104.14" y1="60.96" x2="-48.26" y2="60.96" width="0.1524" layer="97" style="longdash"/>
@@ -19437,7 +19437,10 @@ pozostale 3 sot223</text>
 <instance part="U$3" gate="G$1" x="-81.28" y="88.9"/>
 <instance part="U$4" gate="G$1" x="-63.5" y="101.6"/>
 <instance part="U$5" gate="G$1" x="-129.54" y="106.68"/>
-<instance part="U$6" gate="G$1" x="-129.54" y="91.44"/>
+<instance part="U$6" gate="G$1" x="-129.54" y="91.44" smashed="yes">
+<attribute name="NAME" x="-139.7" y="83.82" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-139.7" y="81.28" size="1.778" layer="96"/>
+</instance>
 <instance part="R3" gate="G$1" x="-139.7" y="99.06" smashed="yes" rot="R270">
 <attribute name="NAME" x="-146.05" y="100.5586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-146.05" y="98.298" size="1.778" layer="96"/>
@@ -19828,6 +19831,7 @@ pozostale 3 sot223</text>
 <attribute name="NAME" x="-106.299" y="89.916" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-103.759" y="89.916" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="C33" gate="G$1" x="157.48" y="10.16" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -20740,6 +20744,9 @@ pozostale 3 sot223</text>
 <wire x1="177.8" y1="2.54" x2="182.88" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="2.54" x2="182.88" y2="10.16" width="0.1524" layer="91"/>
 <junction x="177.8" y="2.54"/>
+<pinref part="C33" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="2.54" x2="157.48" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="2.54" x2="157.48" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I2C1_SDA" class="0">
@@ -21835,8 +21842,12 @@ pozostale 3 sot223</text>
 <segment>
 <pinref part="U$19" gate="G$1" pin="IN"/>
 <pinref part="P+24" gate="1" pin="+12V"/>
-<wire x1="160.02" y1="22.86" x2="154.94" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="22.86" x2="157.48" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="22.86" x2="154.94" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="22.86" x2="154.94" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="C33" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="15.24" x2="157.48" y2="22.86" width="0.1524" layer="91"/>
+<junction x="157.48" y="22.86"/>
 </segment>
 </net>
 <net name="+24V" class="0">
